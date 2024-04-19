@@ -1,0 +1,751 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Quicksand', sans-serif;
+}
+
+header {
+  background-color: #292F45;
+  color: white;
+  width: 100%;
+  height: 9rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2rem;
+  align-items: center;
+  font-size: 1.3rem;
+
+}
+
+header img {
+  margin-left: 3rem;
+  height: 5rem;
+}
+
+header section h5 {
+  border-radius: 50%;
+  background-color: #DF7C6F;
+  color: white;
+  padding: .7rem;
+  font-size: 1.1rem;
+  text-align: center;
+  margin: 0 .4rem;
+}
+
+header nav {
+  display: flex;
+  width: 65%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header section {
+  display: flex;
+  align-items: center;
+}
+
+header ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  width: 65%;
+}
+
+header ul li {
+  border: 1px solid transparent;
+  padding: .4rem .6rem;
+  transition: all 1s;
+
+}
+
+header ul li:hover {
+  background-color: white;
+  color: black;
+  border-radius: .2rem;
+}
+
+header nav ion-icon {
+  font-size: 1.5rem;
+  margin: 0 .3rem;
+}
+
+#profileIcon {
+  font-size: 2.5rem;
+}
+
+header nav p {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+header nav button {
+  margin-left: -1.5rem;
+  padding: .4rem;
+  border-radius: .5rem;
+  color: #DF7C6F;
+  background-color: transparent;
+  border: none;
+}
+
+.home {
+  width: 100%;
+  height: 90vh;
+  background-image: url('https://webcdn.executivecentre.com/wp-content/uploads/2020/09/blog_header.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  font-family: sans-serif;
+
+}
+
+.home section {
+  width: inherit;
+  height: inherit;
+  display: flex;
+  backdrop-filter: brightness(.7);
+}
+
+
+.home article {
+  margin: auto;
+  width: 100%;
+  transition: all 1s;
+  padding-left: 16rem;
+
+}
+
+
+
+.home h2 {
+  font-size: 1.1rem;
+  display: flex;
+  gap: 2rem;
+  width: 60%;
+}
+
+.home h1 {
+  width: 100%;
+
+}
+
+.home h1::before {
+  font-size: 6rem;
+  content: 'DREAM-HYRE';
+  animation: h1_before 8s infinite;
+  transition: all 1s;
+
+
+}
+
+@keyframes h1_before {
+  0% {
+      content: 'DREAM-HYRE';
+  }
+
+  50% {
+      content: 'WEB-DEVELOPMENT';
+  }
+
+  100% {
+      content: 'FULL-STACK';
+  }
+}
+
+.home p {
+  width: 50%;
+  margin-top: 1rem;
+}
+
+.home img {
+  width: 50%;
+}
+
+.home button {
+  margin-top: 1rem;
+  padding: .7rem 1.3rem;
+  background-color: #1F6ED4;
+  border: none;
+  align-self: flex-start;
+  color: white;
+  font-weight: bold;
+}
+
+
+
+/* BABJII */
+#teach {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 3rem;
+}
+
+#teach aside {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+}
+
+#teach aside article {
+  width: 70%;
+}
+
+#teach aside h1 {
+  font-size: 2rem;
+}
+
+#teach aside button {
+  background-color: rgb(7, 7, 234);
+  color: white;
+  padding: .4rem 1rem;
+  margin-top: .5rem;
+  border: none;
+  font-weight: bold;
+}
+
+#teach section {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#teach article {
+  width: 50%;
+}
+
+#teach section img {
+  width: 17rem;
+  height: auto;
+  transition: all 1s;
+  margin-top: .5rem;
+
+
+}
+
+#teach h1::before {
+  content: 'What Do We Teach?';
+}
+
+#teach:hover h1::before {
+  animation: teach 8s 1;
+
+}
+
+@keyframes teach {
+  0% {
+      content: 'What Do We Teach?';
+  }
+
+  25% {
+      content: 'FRONTEND';
+  }
+
+  50% {
+      content: 'BACKEND';
+  }
+
+  75% {
+      content: 'FULL-STACK';
+  }
+
+  100% {
+      content: 'DS AND ALGO';
+  }
+}
+
+#teach:hover section img {
+  animation: scale_img 2s 1;
+
+}
+
+#teach section article:first-child img {
+  animation-delay: 10ms;
+}
+
+#teach section article:nth-child(2) img {
+  animation-delay: 2s;
+}
+
+#teach section article:nth-child(3) img {
+  animation-delay: 4s;
+}
+
+#teach section article:last-child img {
+  animation-delay: 6s;
+}
+
+@keyframes scale_img {
+  0% {
+      transform: scale(1);
+  }
+
+  50% {
+      transform: scale(1.1);
+  }
+
+  100% {
+      transform: scale(1);
+  }
+}
+
+#teach aside p {
+  width: 15rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+#teach button ion-icon {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  font-size: 3rem;
+  border-radius: 50%;
+  padding: .5rem;
+  color: white;
+  z-index: 22;
+}
+
+/* BABJII */
+/* santhosh */
+.partners-main {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.partners-top {
+  background-color: rgb(14, 14, 51);
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+}
+
+.partners-middle {
+  background-color: rgb(14, 14, 51);
+  min-height: 300px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.partners-middle img {
+  width: 200px;
+}
+
+.partners-bottom {
+  background-color: gray;
+  min-height: 150px;
+}
+
+.partners-top h1 {
+  width: 50%;
+  text-align: center;
+  margin: auto;
+  color: white;
+  font-size: 35px;
+  font-weight: 400;
+}
+
+hr {
+  margin: 0;
+  border: none;
+  border-bottom: 0.1px solid rgba(77, 77, 77, 0.63);
+}
+
+.partners-dataset {
+  position: absolute;
+  bottom: 1rem;
+  display: flex;
+  left: 0.5rem;
+}
+
+.partners-dataset article {
+  /* position: relative; */
+  min-width: 100px;
+  min-height: 100px;
+  background-color: #ffffff;
+  border-radius: 1px;
+  margin: auto 60px;
+  box-shadow: 0 0 5px white;
+}
+
+.partners-dataset article div {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+
+}
+
+.partners-dataset article div span {
+  color: orangered;
+  font-size: 52px;
+  font-family: serif;
+  padding-top: 5px;
+  margin-bottom: -25px;
+  rotate: 180deg;
+}
+
+.partners-dataset article div h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.partners-dataset article div p {
+  font-size: 15px;
+  text-align: center;
+  padding: 10px 0 15px 0;
+  line-height: 22px;
+}
+
+/* santhosh */
+
+/* eswar */
+
+#about_us {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  /* align-items: center; */
+  position: relative;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.about-left {
+  /* position: relative; */
+  width: 40%;
+  height: 100vh;
+  background-color: #e4d9cd;
+}
+
+.about-right {
+  /* position: relative; */
+  width: 60%;
+  background-color: white;
+}
+
+.portfolio {
+  position: absolute;
+  background-color: #fbf9f8;
+  top: 15vh;
+  left: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vh;
+  z-index: 5;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.portfolio-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  width: 100%;
+  min-height: 77vh;
+  background-color: rgb(255, 232, 238);
+  position: relative;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+}
+
+
+.portfolio-right {
+  min-height: 77vh;
+  background-color: white;
+}
+
+.portfolio-right {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+}
+
+.portfolio-right h1 {
+  font-size: 100px;
+}
+
+#about_founder {
+  line-height: 1.7rem;
+}
+
+#about_founder::first-letter {
+  margin-left: 1rem;
+  color: lightgreen;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: .3rem;
+
+}
+
+.portfolio-right h1,
+.portfolio-right h3 {
+  margin-left: 20px;
+
+}
+
+.portfolio-right p {
+  font-size: 15px;
+  padding: 1rem;
+}
+
+.about-btns {}
+
+.portfolio-left h1 {
+  font-size: 30px;
+  width: 70%;
+  text-align: center;
+}
+
+.portfolio-left hr {
+  width: 20%;
+  border: 1px solid blue;
+}
+
+.portfolio-left p {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: .8rem;
+  font-size: 1.6rem;
+  position: absolute;
+  bottom: 0rem;
+  background-color: white;
+  width: 100%;
+}
+
+.portfolio-left img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.about-resume,
+.about-project {
+  min-width: 50px;
+  padding: 7px 25px;
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 30px;
+
+}
+
+.about-project {
+  background-color: white;
+  color: black;
+}
+
+/* eswar */
+
+/* faqs */
+
+#pre {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#pre_form {
+  width: 70%;
+  height: auto;
+  background-color: white;
+  margin: 5% auto;
+  padding: 2rem;
+  text-align: start;
+}
+
+#pre_form h1 {
+  font-size: 3rem;
+  margin: 1rem 0;
+}
+
+#pre_form input {
+  width: 20rem;
+  height: 2rem;
+  font-size: 20px;
+}
+
+#pre_form button {
+  width: 7rem;
+  height: 2.3rem;
+  background-color: black;
+  color: white;
+}
+
+#question {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+#question input {
+  padding: 1rem;
+}
+
+#question input::placeholder {
+  color: gray;
+}
+
+#pre_form hr {
+  border: 1px solid black;
+  margin: 1rem 0;
+}
+
+#pre details {
+  margin: 1rem 0;
+}
+
+#pre_form summary {
+  font-size: 1.1rem;
+}
+
+#pre_form p {
+  padding: .4rem 1rem;
+  font-weight: normal;
+}
+
+#pre_form ul {
+  padding: 0 2rem;
+}
+
+#pre_form #faq {
+  font-size: 2.1rem;
+  margin: 1rem 0;
+}
+
+/* faqs */
+
+/* SAI */
+
+footer {
+  width: 100%;
+  height: auto;
+  padding: 2rem;
+  padding-left: 4rem;
+  font-family: Roboto, 'Segoe UI', Tahoma, sans-serif;
+
+}
+
+footer main {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer ul {
+  width: 40%;
+  display: flex;
+  list-style: none;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+footer section>ul {
+  width: 40%;
+  display: flex;
+  list-style: none;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#tel {
+  gap: 2rem;
+}
+
+#subscribe {
+  width: 40%;
+  flex-direction: column;
+}
+
+footer section {
+  width: 40%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 2rem;
+
+}
+
+footer input {
+  padding: .4rem;
+  width: 15rem;
+  border-radius: 1rem 0 0 1rem;
+}
+
+footer button {
+  background-color: black;
+  color: rgb(249, 247, 247);
+  padding: .4rem;
+  border-radius: 0 1rem 1rem 0;
+
+
+}
+
+footer h3 {
+  letter-spacing: .5rem;
+  margin-bottom: 0%;
+  font-size: x-large;
+}
+
+footer article {
+  display: flex;
+  flex-direction: column;
+  margin: .6rem 0;
+  gap: .7rem;
+}
+
+footer hr {
+  width: 13rem;
+  font-weight: bold
+}
+
+footer span {
+  margin: .9rem 0;
+}
+
+footer ion-icon {
+  font-size: 2.1rem;
+  margin: 0 .5rem;
+}
+body>article{
+      width: 95%;
+      height: 3.8rem;
+      display: flex;
+      align-items: center;
+      padding-left: 2rem;
+      font-size: 1.2rem;
+      background-color: white;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      margin: 3rem;
+      gap: 1rem;
+
+}
+body>article p{
+  all:  unset;
+}
+body>article p strong{ 
+margin: 0 1rem;
+font-weight: bold;
+font-family: sans-serif;
+}
